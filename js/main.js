@@ -3,23 +3,24 @@
 
   const btn = document.getElementById('btn');
 
-  btn.addEventListener('click', function() {
+  btn.addEventListener('click', () => {
 
-    const n = Math.random();
-    if (n < 0.01) {
-      this.textContent = '大吉';
-    } else if (n < 0.1) {
-      this.textContent = '末吉';
+    const num = Math.random();
+
+    if (num < 0.01) {
+      btn.textContent = '大吉';
+    } else if (num < 0.1) {
+      btn.textContent = '末吉';
     } else {
-      this.textContent = '中吉';
+      btn.textContent = '中吉';
     }
-
   });
 
-  btn.addEventListener('mousedown', function() {
-    this.className = 'pushed';
+  btn.addEventListener('mousedown', () => {
+    btn.classList.add('pushed');
   });
-  btn.addEventListener('mouseup', function() {
-    this.className = '';
+
+  btn.addEventListener('mouseup', () => {
+    btn.classList.remove('pushed');
   });
 })();

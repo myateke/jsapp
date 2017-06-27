@@ -6,12 +6,12 @@ body {
 
 #btn {
   margin: 30px auto 0;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  background: #00aba9;
+  background: #1ABC9C;
   text-align: center;
-  line-height: 200px;
+  line-height: 180px;
   color: #fff;
   font-size: 42px;
   font-weight: bold;
