@@ -1,4 +1,4 @@
-(function() {
+(() => {
   'use strict';
 
   const btn = document.getElementById('btn');
@@ -15,6 +15,7 @@
     }
 
   });
+
   btn.addEventListener('mousedown', function() {
     this.className = 'pushed';
   });
